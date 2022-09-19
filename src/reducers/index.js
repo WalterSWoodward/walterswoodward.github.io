@@ -38,21 +38,12 @@ const initialState = {
             deployment_tools: "Netlify",
             text: "A web application that I built to make it easier for prospective employers to look at what I am working on and contact me.",
             code_link: "https://github.com/walterswoodward/portfolio",
-        },
-        // "nine-acre-photography": {
-        //     tool_icons: [faLaravel],
-        //     title: "Nice Acre Photography",
-        //     frontend_tools: "Laravel Blade, VueJS, TailwindCSS",
-        //     deployment_tools: "Heroku",
-        //     text: "A portfolio web application I am currently in the process of building for a friend. I decided to use Laravel so that transitioning from what it is now (a relatively simple web application) to an online community center in the future will be relatively painless.",
-        //     deploy_link: "https://nine-acre-photography.herokuapp.com/",
-        //     code_link: "https://github.com/walterswoodward/nine-acre-photography",
-        // },
+        }
     },
     dropDownOpen: false
 };
 
-export const Reducer = (state = initialState, action) => {
+export const rootReducer = (state = initialState, action) => {
     switch (action.type) {
         case TOGGLE_DROP_DOWN:
             return { ...state, dropDownOpen: !state.dropDownOpen };

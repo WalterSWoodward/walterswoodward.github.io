@@ -9,6 +9,8 @@ import Home from "./components/Home.js";
 import About from "./components/About.js";
 import Portfolio from "./components/Portfolio.js";
 import Scan123 from "./components/Portfolio/Scan123.js";
+import Sandbox from "./components/Sandbox";
+import ProfileGenerator from "./components/ProfileGenerator.js";
 
 import Contact from "./components/Contact.js";
 
@@ -22,6 +24,8 @@ class App extends Component {
                 <Route path="/portfolio" component={Portfolio} exact />
                 <Route path="/contact" component={Contact} exact />
                 <Route path="/portfolio/scan123" component={Scan123} exact />
+                <Route path="/sandbox" component={Sandbox} exact />
+                <Route path="/rpg" component={ProfileGenerator} exact />
             </Switch>
         </Router>)
     }
